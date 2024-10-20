@@ -5,28 +5,106 @@
 table, h2 {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: 75%;
+  color: white;
 }
 
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
+  color: white;
+  background-color: transparent;
+  
 }
 
 img {
-    width: 300px;
-    height: 300px;
+  width: 150px;
+  height: 150px;
 }
+
+body {
+  padding-left: 20px;
+  z-index: 9999;
+}
+
+@keyframes move-background {
+    from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  @-webkit-keyframes move-background {
+    from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  
+  @-moz-keyframes move-background {    
+      from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  
+      @-webkit-keyframes move-background {
+      from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  
+  .background-container{
+      position: fixed;
+      top: 0;
+      left:0;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+  }
+  
+  .stars {
+   background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+   position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: block;
+        z-index: 0;
+  }
+  
+  .twinkling{
+      width:10000px;
+      height: 100%;
+      background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+      background-size: 1000px 1000px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 2;
+      
+      -moz-animation:move-background 70s linear infinite;
+    -ms-animation:move-background 70s linear infinite;
+    -o-animation:move-background 70s linear infinite;
+    -webkit-animation:move-background 70s linear infinite;
+    animation:move-background 70s linear infinite;
+  }
 </style>
 </head>
 <body>
 
-<h2>Wishlist for Mom - Last updated Nov 19, 2023</h2>
+<h2>Stone's Wishlist - Last updated Oct 19, 2024</h2>
 
 <table>
   <tr>
@@ -36,55 +114,56 @@ img {
     <th>Notes</th>
   </tr>
   <tr>
-    <td><img src="/images/vivaldi_01k5wVuWR6.png"></td>
-    <td>Master Detective Archives: RAIN CODE, Nintendo Switch, Spike Chunsoft</td>
-    <td><a href="https://www.walmart.com/ip/Master-Detective-Archives-RAIN-CODE-Nintendo-Switch-Spike-Chunsoft-811800030452/2282105274?from=/search">https://www.walmart.com/ip/Master-Detective-Archives-RAIN-CODE-Nintendo-Switch-Spike-Chunsoft-811800030452/2282105274?from=/search</a></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><img src="/images/vivaldi_ohm6gNBtWa.png"/></td>
-    <td>Kirby and the Forgotten Land, Nintendo Switch - U.S. Version</td>
-    <td><a href="https://www.walmart.com/ip/Kirby-and-the-Forgotten-Land-Nintendo-Switch-U-S-Version/703058186?from=/search">https://www.walmart.com/ip/Kirby-and-the-Forgotten-Land-Nintendo-Switch-U-S-Version/703058186?from=/search</a></td>
-    <td>For this game and the one above, I'm fine with a <a href="https://www.target.com/p/nintendo-eshop-gift-card-digital/-/A-53054673?preselect=52567886#lnk=sametab">digital Nintendo eShop gift card</a> because I don't necessarily need the physical copies (but they are fine, they do sell them in stores)</td>
-  </tr>
-  <tr>
-    <td><img src="/images/vivaldi_nlB1BMsK4V.png"/></td>
-    <td>Floating Game Shelf for Nintendo Switch</td>
-    <td><a href="https://www.etsy.com/listing/1214966101/floating-game-shelf-for-nintendo-switch?variation0=3708731398&variation1=2673924270">https://www.etsy.com/listing/1214966101/floating-game-shelf-for-nintendo-switch?variation0=3708731398&variation1=2673924270</a></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><img src="/images/steamcards_cards_02.png"></td>
+    <td><img src="https://raw.githubusercontent.com/stonefrango/stonefrango/refs/heads/main/wishlists/images/steamcards_cards_02.png"></td>
     <td>STEAM Gift Card</td>
     <td><a href="https://store.steampowered.com/digitalgiftcards/">https://store.steampowered.com/digitalgiftcards/</a></td>
     <td>Most grocery stores sell these</td>
   </tr>
   <tr>
-    <td><img src="/images/vivaldi_b9vZtmsHJ8.png"></td>
-    <td>LEGO Icons Tranquil Garden Building Kit 10315</td>
-    <td><a href="https://www.target.com/p/lego-icons-tranquil-garden-building-kit-10315/-/A-87830551">https://www.target.com/p/lego-icons-tranquil-garden-building-kit-10315/-/A-87830551</a></td>
+    <td><img src="https://raw.githubusercontent.com/stonefrango/stonefrango/refs/heads/main/wishlists/images/vivaldi_Ek3AKKrV0T.png"></td>
+    <td>LEGO Minecraft The Crafting Table Build and Display Set 21265</td>
+    <td><a href="https://www.target.com/p/lego-minecraft-21265/-/A-90573727">https://www.target.com/p/lego-minecraft-21265/-/A-90573727</a></td>
     <td></td>
   </tr>
   <tr>
-    <td><img src="/images/zgc-1000x631m.jpg"></td>
-    <td>Zenni Gift Card</td>
-    <td><a href="https://www.zennioptical.com/p/gift-certificate/prod20001?skuId=sku20011">https://www.zennioptical.com/p/gift-certificate/prod20001?skuId=sku20011</a></td>
-    <td>So I can see lol 🤓</td>
+    <td><img src="https://github.com/stonefrango/stonefrango/blob/main/wishlists/images/vivaldi_9oTw2FhSF2.png?raw=true"></td>
+    <td>The Legend of Zelda: Echoes of Wisdom - Nintendo Switch</td>
+    <td><a href="https://www.target.com/p/the-legend-of-zelda-echoes-of-wisdom-nintendo-switch/-/A-92664766#lnk=sametab">https://www.target.com/p/the-legend-of-zelda-echoes-of-wisdom-nintendo-switch/-/A-92664766#lnk=sametab</a></td>
+    <td></td>
   </tr>
   <tr>
-    <td><img src="/images/vivaldi_Maj7SAn9dK.png"></td>
-    <td>MARUNDA Heated Cat Houses for Outdoor Cats in Winter, Heated cat House for Indoor and Kitty Shelter for Your Pet to Stay Warm and Cozy,Easy to Assemble.(2 Step Finish) (L-Heated)</td>
-    <td><a href="https://www.amazon.com/MARUNDA-Outdoor-Shelter-Assemble-L-Heated/dp/B0CG91MNFB">https://www.amazon.com/MARUNDA-Outdoor-Shelter-Assemble-L-Heated/dp/B0CG91MNFB</a></td>
-    <td>There's a 30% off coupon you can select to make it cheaper (at least at the time of me updating this.)<br>Need 2 of these</td>
+    <td><img src="https://raw.githubusercontent.com/stonefrango/stonefrango/refs/heads/main/wishlists/images/vivaldi_FVm9wWGZgQ.png"></td>
+    <td>Google Nest Protect - Smoke Alarm - Smoke Detector and Carbon Monoxide Detector - Battery Operated , White - S3000BWES</td>
+    <td><a href="https://www.amazon.com/dp/B00XV1RCRY">https://www.amazon.com/dp/B00XV1RCRY</a></td>
+    <td>I need 2 of these</td>
   </tr>
   <tr>
-    <td><img src="/images/71yA7ONaZhL._AC_SL1500_.jpg"></td>
-    <td>FUNNy elf Car Seat Organizer with Partitions, & 4 Cup, 11 Storages, Collapsible Passenger Seat Organizer Car Organizer Backseat, Car Organizer Front Seat</td>
-    <td><a href="https://www.amazon.com/FUNNy-elf-Car-Seat-Organizer/dp/B0B9SB5RDR">https://www.amazon.com/FUNNy-elf-Car-Seat-Organizer/dp/B0B9SB5RDR</a></td>
+    <td><img src="https://github.com/stonefrango/stonefrango/blob/main/wishlists/images/vivaldi_A2Md7Y7q4X.png?raw=true"></td>
+    <td>UBeesize 14x20x1 Reusable Electrostatic Air Filter HVAC AC Furnace Filter,MERV 8, Washable, Lasts a Lifetime,Permanent Air Filter,Breathe Fresher,Home And Office(Actual Size:13.5x19.5x0.82 Inch)</td>
+    <td><a href="https://www.amazon.com/dp/B0CM6HTRXW">https://www.amazon.com/dp/B0CM6HTRXW</a></td>
+    <td>I need 2 of these</td>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/stonefrango/stonefrango/refs/heads/main/wishlists/images/collars.png"></td>
+    <td>CollarDirect Leather Cat Collar with Bell</td>
+    <td>
+      <a href="https://www.chewy.com/collardirect-leather-cat-collar-bell/dp/216639">https://www.chewy.com/collardirect-leather-cat-collar-bell/dp/216639</a><br>
+      <a href="https://www.chewy.com/collardirect-leather-cat-collar-bell/dp/216633">https://www.chewy.com/collardirect-leather-cat-collar-bell/dp/216633</a><br>
+      <a href="https://www.chewy.com/collardirect-leather-cat-collar-bell/dp/216629">https://www.chewy.com/collardirect-leather-cat-collar-bell/dp/216629</a><br>
+      <a href="https://www.chewy.com/collardirect-leather-cat-collar-bell/dp/216621">https://www.chewy.com/collardirect-leather-cat-collar-bell/dp/216621</a><br>
+    </td>
+    <td>We need the Mint Green, Beige, Purple, and Orange ones for the cats! They're all the same collar just in different colors.</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/stonefrango/stonefrango/blob/main/wishlists/images/vivaldi_6yEty5ZofV.png?raw=true"></td>
+    <td>HGN Glass Rinser for Kitchen Sinks,Stainless Steel Sink Cup Washer,Cup Rinser Bar Cup Cleaner Sink Attachment (Chrome)</td>
+    <td><a href="https://www.amazon.com/HGN-Stainless-Rinser-Kitchen-Accessories/dp/B0CKQXRTSC">https://www.amazon.com/HGN-Stainless-Rinser-Kitchen-Accessories/dp/B0CKQXRTSC</a></td>
     <td></td>
   </tr>
 </table>
-s
+<div class="background-container">
+  <div class="stars"></div>
+  <div class="twinkling"></div>
 </body>
 </html>
 
