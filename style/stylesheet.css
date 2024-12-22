@@ -1,128 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,600&display=swap');
 
-html {
-    height: 100dvh;
-}
-
 body {
-    z-index: 9999;
     font-family: 'Source Sans Pro', monospace;
-    align-content: center;
-    color: aliceblue;
+    background-color: black;
+    text-align: center;
 }
 
 a {
     color: yellow;
 }
 
-h1 {
+a, p {
+    min-height: 80px;
+    height: 100%;
+    display: grid;
+    font-size: 24px;
+    margin: 0;
+    border-color: white;
+    border-radius: 5px;
+    border-style: solid;
     text-align: center;
+    align-items: center;
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 95svw;
-    height: 2.5rem;
+h1 {
     text-align: center;
-    z-index: 9999;
+    font-size: 42px;
+    font-weight: 1600;
+    text-decoration: underline wavy 4px;
+}
+
+h2 {
+    font-size: 36px;
+    margin: 0px 0px 5px 0px;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+ul {
+    padding-left: 0;
+}
+
+h1, h2, li, p {
+    color: white;
 }
 
 .section {
-    border: 5px;
-    border-color: black;
-    border-radius: 5%;
-    border-style:solid;
-    min-height: 300px;
-    min-width: 200px;
-    padding: 10px 30px 10px;
-    margin: 5px 50px 5px;
+    display: inline-block;
+    min-width: 250px;
+    vertical-align: top;
+    padding: 10px;
 }
 
 #wrapper {
-   display: flex;
-   justify-content: center;
+    vertical-align: top;
+    align-self: center;
+    display: inline-block;
 }
 
-@keyframes move-background {
-    from {
-          -webkit-transform: translate3d(0px, 0px, 0px);
-      }
-      to { 
-          -webkit-transform: translate3d(1000px, 0px, 0px);
-      }
-  }
-  @-webkit-keyframes move-background {
-    from {
-          -webkit-transform: translate3d(0px, 0px, 0px);
-      }
-      to { 
-          -webkit-transform: translate3d(1000px, 0px, 0px);
-      }
-  }
-  
-  @-moz-keyframes move-background {    
-      from {
-          -webkit-transform: translate3d(0px, 0px, 0px);
-      }
-      to { 
-          -webkit-transform: translate3d(1000px, 0px, 0px);
-      }
-  }
-  
-      @-webkit-keyframes move-background {
-      from {
-          -webkit-transform: translate3d(0px, 0px, 0px);
-      }
-      to { 
-          -webkit-transform: translate3d(1000px, 0px, 0px);
-      }
-  }
-  
-  .background-container{
-      position: fixed;
-      top: 0;
-      left:0;
-      bottom: 0;
-      right: 0;
-      z-index: -1;
-  }
-  
-  .stars {
-   background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
-   position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      display: block;
-        z-index: 0;
-  }
-  
-  .twinkling{
-      width:10000px;
-      height: 100%;
-      background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
-      background-size: 1000px 1000px;
-      position: absolute;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      z-index: 2;
-      
-      -moz-animation:move-background 70s linear infinite;
-    -ms-animation:move-background 70s linear infinite;
-    -o-animation:move-background 70s linear infinite;
-    -webkit-animation:move-background 70s linear infinite;
-    animation:move-background 70s linear infinite;
-      
-  }
-  
-  img{
-    height: 70vh;
-    width:70vh;
-    position: absolute;
-    z-index: 3;
-    right: 20px;
-  }
-  
+@media only screen and (max-width: 1199px) {
+    a, p {
+        font-size: 36px;
+    }
+    h1 {
+        font-size: 56px;
+    }
+    h2 {
+        font-size: 48px;
+    }
+}
